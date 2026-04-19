@@ -1,23 +1,19 @@
 // Mobile menu toggle
-const menuBtn = document.getElementById('menuBtn');
-const mobileMenu = document.getElementById('mobileMenu');
+let btn = document.getElementById('menuBtn');
+let menu = document.getElementById('mobileMenu');
 
-if (menuBtn && mobileMenu) {
-    menuBtn.addEventListener('click', function() {
-        if (mobileMenu.classList.contains('hidden')) {
-            mobileMenu.classList.remove('hidden');
-            menuBtn.textContent = '✕';
-        } else {
-            mobileMenu.classList.add('hidden');
-            menuBtn.textContent = '☰';
-        }
-    });
-}
+btn.onclick = function() {
+    if (menu.classList.contains('open')) {
+        menu.classList.remove('open');
+        btn.innerHTML = '☰';
+    } else {
+        menu.classList.add('open');
+        btn.innerHTML = '✕';
+    }
+};
 
-// Chat widget button click handler
-const chatBtn = document.getElementById('chatBtn');
-if (chatBtn) {
-    chatBtn.addEventListener('click', function() {
-        alert('💬 AI Assistant: How can I help you today?');
-    });
-}
+// Chat button
+let chat = document.getElementById('chatBtn');
+chat.onclick = function() {
+    alert('Hello! How can I help?');
+};
