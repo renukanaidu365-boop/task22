@@ -41,10 +41,3 @@ A modern hero landing page for an AI-powered workspace platform.
 ### How to Run:
 1. Open index.html in a browser
 2. Or deploy to GitHub Pages
-
-### Live Demo:
-[Add your GitHub Pages link here]
-
----
-
-**Built with Tailwind CSS + custom CSS**
